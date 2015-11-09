@@ -1,5 +1,5 @@
 import Ember from "ember";
-import { module, test } from 'qunit';
+import { module, skip } from 'qunit';
 import startApp from '../helpers/start-app';
 import appRoute from 'ember-training/routes/application';
 
@@ -31,7 +31,7 @@ module('01 - Templates Acceptance Tests', {
   }
 });
 
-test("01 - Templates - 01 - Should display comics", function (assert) {
+skip("01 - Templates - 01 - Should display comics", function (assert) {
   assert.expect(4);
 
   setupApp();
@@ -49,7 +49,7 @@ test("01 - Templates - 01 - Should display comics", function (assert) {
   });
 });
 
-test("01 - Templates - 02 - Should display scriptwriter if exists", function (assert) {
+skip("01 - Templates - 02 - Should display scriptwriter if exists", function (assert) {
   assert.expect(4);
 
   setupApp('MIXED');
@@ -67,7 +67,7 @@ test("01 - Templates - 02 - Should display scriptwriter if exists", function (as
   });
 });
 
-test("01 - Templates - 03 - Should change class if no scriptwriter", function (assert) {
+skip("01 - Templates - 03 - Should change class if no scriptwriter", function (assert) {
   assert.expect(4);
 
   setupApp('MIXED');
@@ -85,7 +85,7 @@ test("01 - Templates - 03 - Should change class if no scriptwriter", function (a
   });
 });
 
-test("01 - Templates - 04 - Should display message if empty", function (assert) {
+skip("01 - Templates - 04 - Should display message if empty", function (assert) {
   assert.expect(3);
 
   setupApp('EMPTY');
